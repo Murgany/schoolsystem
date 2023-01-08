@@ -26,6 +26,8 @@ const App = () => {
           <Row className="dark-bg m-0 p-0">
             <Navigation />
           </Row>
+
+          {/* {!loggedInSession ? ( */}
             <Container className="main-text-color">
               <Row className="justify-content-center">
                 <Row
@@ -273,6 +275,9 @@ const App = () => {
                 <small> &copy; 2022 Rawy Murgany</small>
               </footer>
             </Container>
+          {/* ) : (
+            <></>
+          )} */}
         </Router>
       </Row>
     </Container>
@@ -280,3 +285,4 @@ const App = () => {
 };
 
 export default App;
+
