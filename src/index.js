@@ -8,7 +8,7 @@ import axios from 'axios';
 import "./i18n"
 
 // extarnal API
-axios.defaults.baseURL = "http://simpleschoolsystem.pythonanywhere.com";
+axios.defaults.baseURL = "https://simpleschoolsystem.pythonanywhere.com";
 
 ReactDOM.render(
   <React.StrictMode>
