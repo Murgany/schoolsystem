@@ -42,7 +42,7 @@ const LoginForm = () => {
         // save user info for authentication purposes
         sessionStorage.setItem("user", response.data.username);
         sessionStorage.setItem("token", response.data.token);
-        sessionStorage.setItem("staffStatus", response.data.userGroup);
+        sessionStorage.setItem("user_group", response.data.userGroup);
       });
       // go to home page after successful login
       history.push({ pathname: "/students" });
