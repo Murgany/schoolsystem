@@ -18,6 +18,8 @@ const App = () => {
     document.dir = i18n.dir();
   }, [i18n, i18n.language]);
 
+  const loggedInSession = sessionStorage.getItem("token");
+  
   return (
     <Container className="main bg-light" fluid>
       <Row>
@@ -26,7 +28,7 @@ const App = () => {
           <Row className="dark-bg m-0 p-0">
             <Navigation />
           </Row>
-    
+    {!loggedInSession ?
             <Container className="main-text-color">
               <Row className="justify-content-center">
                 <Row
@@ -273,7 +275,8 @@ const App = () => {
                 <small>{t("page_disappear")}</small>{" "}
                 <small> &copy; 2022 Rawy Murgany</small>
               </footer>
-            </Container>
+            </Container> 
+                        : <></>
         </Router>
       </Row>
     </Container>
