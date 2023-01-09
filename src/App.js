@@ -13,7 +13,6 @@ axios.defaults.xsrfHeaderName = "X-CSRFToken";
 const App = () => {
   
   const { t, i18n } = useTranslation();
-//   const loggedInSession = sessionStorage.getItem("token");
 
   useEffect(() => {
     document.dir = i18n.dir();
