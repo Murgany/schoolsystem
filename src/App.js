@@ -28,7 +28,8 @@ const App = () => {
           <Row className="dark-bg m-0 p-0">
             <Navigation />
           </Row>
-    {!loggedInSession ? <>
+    {!loggedInSession ? 
+      <>
             <Container className="main-text-color">
               <Row className="justify-content-center">
                 <Row
@@ -131,120 +132,6 @@ const App = () => {
                 </Row>
                 <br />
 
-                <Row className="justify-content-center tech-box dark-bg mt-4 m-0 p-">
-                  <div className="light-text custom-view dark-bg mt-5 m- p-0 mb-4">
-                    <h5 className="main header-font text-center pb-2">
-                      {t("tech_used")}
-                    </h5>
-
-                    <p>
-                      <a
-                        id="app-link"
-                        href="https://reactjs.org/"
-                        target="blank_"
-                      >
-                        React JS
-                      </a>{" "}
-                      {t("ui")}
-                    </p>
-
-                    <p>
-                      <a
-                        id="app-link"
-                        href="https://www.djangoproject.com/"
-                        target="blank_"
-                      >
-                        Djnago
-                      </a>{" "}
-                      {t("backend")}
-                    </p>
-
-                    <p>
-                      <a
-                        id="app-link"
-                        href="https://www.django-rest-framework.org/"
-                        target="blank_"
-                      >
-                        Django REST Framework
-                      </a>{" "}
-                      {t("drf")}
-                    </p>
-
-                    <p>
-                      <a
-                        id="app-link"
-                        href="https://james1345.github.io/django-rest-knox/"
-                        target="blank_"
-                      >
-                        Django-Rest-Knox
-                      </a>{" "}
-                      {t("knox")}
-                    </p>
-
-                    <p>
-                      <a
-                        id="app-link"
-                        href="https://www.axios.com/"
-                        target="blank_"
-                      >
-                        Axios
-                      </a>{" "}
-                      {t("axios")}
-                    </p>
-
-                    <p>
-                      <a
-                        id="app-link"
-                        href="https://getbootstrap.com/"
-                        target="blank_"
-                      >
-                        Bootstrap
-                      </a>{" "}
-                      {t("and")}{" "}
-                      <a
-                        id="app-link"
-                        href="https://react-bootstrap.github.io/"
-                        target="blank_"
-                      >
-                        React-bootstrap
-                      </a>{" "}
-                      {t("responsive")}
-                    </p>
-
-                    <p>
-                      <a
-                        id="app-link"
-                        href="https://www.w3.org/Style/CSS/Overview.en.html"
-                        target="blank_"
-                      >
-                        CSS
-                      </a>{" "}
-                      {t("css")}
-                    </p>
-
-                    <p>
-                      <a
-                        id="app-link"
-                        href="https://reactjs.org/docs/introducing-jsx.html"
-                        target="blank_"
-                      >
-                        JSX
-                      </a>{" "}
-                      {t("jsx")}
-                    </p>
-
-                    <p>
-                      <a
-                        id="app-link"
-                        href="https://react.i18next.com/"
-                        target="blank_"
-                      >
-                        i18next
-                      </a>{" "}
-                      {t("i18next")}
-                    </p>
-                  </div>
-                </Row>
               </Row>
 
               <footer className="text-center light-text row pb-3 dark-bg">
@@ -276,7 +163,9 @@ const App = () => {
                 <small> &copy; 2022 Rawy Murgany</small>
               </footer>
             </Container> 
-            </> : <></>}
+            </> : <>
+      </>
+    }
         </Router>
       </Row>
     </Container>
